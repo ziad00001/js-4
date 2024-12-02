@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login System</title>
+</head>
+<body>
+    <div class="container" id="authContainer">
+        <h2 id="formTitle">Smart Login System</h2>
+        <input type="email" id="email" placeholder="Enter your email">
+        <input type="password" id="password" placeholder="Enter your password">
+        <button id="login">Login</button>
+        <a href="#" id="toggleLink" onclick="toggleForm()">Don't have an account? Sign Up</a>
+    </div>
+
+    <div class="container" id="homeContainer" style="display: none;">
+        <h2>Welcome, <span id="username"></span></h2>
+        <button onclick="logout()">Logout</button>
+    </div>
+
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
